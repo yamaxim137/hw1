@@ -13,11 +13,13 @@ var middl_temper = 0;
 var sum_temper = 0;
 var count = 0;
 
-for (prop in term) {
+for (let prop in term) {
+	sum_temper += term[prop];
 	count++;
-	sum_temper += term.prop;
 }
 
 middl_temper = sum_temper / count;
 
-alert (term);
+alert (middl_temper);
+// alert(count);
+
